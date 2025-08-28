@@ -8,8 +8,8 @@
     "npm": ">=6.0.0"
   },
   "scripts": {
-    "start": "node index.js",  // <- Add this
-    "dev": "nodemon index.js", // Optional: for local development
+    "start": "node index.js",  
+    "dev": "nodemon index.js", 
     "test": ""
   },
   "description": "A fun web app that suggests activities based on type and participants",
