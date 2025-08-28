@@ -1,0 +1,166 @@
+/* ----------------- */
+/* Reset and global */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  height: 100%;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Headings */
+h1 {
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+/* ----------------- */
+/* Container */
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* ----------------- */
+/* Form */
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 100px;
+  grid-column-gap: 15px;
+}
+
+.form input {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+  color: #222;
+}
+
+.form input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.4);
+}
+
+.form-submit {
+  border: none;
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.form-submit:hover {
+  background-color: #5548c8;
+  transform: translateY(-2px);
+}
+
+.form-submit:focus {
+  box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.4);
+}
+
+/* ----------------- */
+/* Cards */
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 100%;
+  gap: 15px;
+}
+
+.card-item {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}
+
+.card-activity {
+  line-height: 1.4;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.tag-error {
+  width: 100%;
+  text-align: center;
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* ----------------- */
+/* Utility */
+.is-element-hidden {
+  display: none;
+}
+
+/* ----------------- */
+/* Responsive */
+@media (max-width: 620px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  .form-submit {
+    width: 100%;
+  }
+}
